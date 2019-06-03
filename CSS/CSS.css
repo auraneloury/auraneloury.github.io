@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "Centaur";
+	font-weight: 700; /* graisse definie dans fichier de la fonte (verifier dans glyph ou fontlab -> font Info) */
+	src: url('../fonts/CentaurM7.otf');
+
+}
+
+@font-face {
+	font-family: "Centaur";
+	font-weight: 700; /* graisse definie dans fichier de la fonte (verifier dans glyph ou fontlab -> font Info) */
+	src: url('../fonts/CentaurM7.otf');
+
+}
+
+em,i {
+	font font-family: "Centaur";
+}
+
+@font-face {
+	font-family: "Helve";
+	font-weight: 700; /* graisse definie dans fichier de la fonte (verifier dans glyph ou fontlab -> font Info) */
+	src: url('../fonts/HelveticaB.otf');
+}
+
+body {
+	/* on appelle la famille déclarée via font-face */
+	font-family: "Centaur", sans-serif;
+	
+    /* largeur du document */
+	background-color: #000000;
+	color: #ffffff;	
+	/* marges : left & right = auto = contenu centré dans la page */
+	margin: 25px 20px 25px 20px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+p {
+	margin: 20px 20% 20px 20%;
+}
+
+/* paragraphes */
+.p1  {
+	line-height: 25px;
+	text-align: left;
+	margin: 20px 0px 20px 0;
+}
+
+.p2 p {
+
+	margin: 330px 0 900px 0;
+}
+
+h1 {
+	font-size: 150px;
+	font-family: "Helve";
+	color: #00ff00;
+	line-height: 130px;
+	text-align: left;
+	margin-left: 32%;
+}
+
+.eyes {
+	position:fixed;
+	width:18%;
+}
+
+.eyes p {
+	margin:0;
+}
+.eyes img {
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+	height: auto;
+}
+
+sup {
+	bottom: 30%;
+	font-size: 75%;
+}
+
+
+header {
+	position: fixed;
+}
+
+/*
+img {
+max-width: 30%;
+}*/
+
+.secret img {
+	max-width: 30%;
+}	
+
+.habillage {
+	float: left;
+	width: 40%;
+    margin-left: -15%;
+    margin-right: 10%;
+
+    text-align: left; 
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    padding: 15px 0px 15px 15px;
+
+    clear: both;
+
+}
+
+.habillage img {
+	width: 100%
+	height: auto;
+}
+
+.habillage-droite {
+    right: 0;
+    float: right;
+    width: 40%;
+    margin-right: -15%;
+
+    font-size: 12px;
+    text-align: right;
+    line-height: 15%
+    color: #ffffff;
+    padding: 20px 0 20px 20px;
+
+    clear: both;
+}
+
+.habillage-droite img {
+	width: 100%;
+	height: auto;
+}
+
+.habillage p, .habillage-droite p {
+	margin: 0;
+}
