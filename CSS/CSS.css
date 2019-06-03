@@ -9,8 +9,8 @@
 	font-family: "Centaur";
 	font-weight: 700; /* graisse definie dans fichier de la fonte (verifier dans glyph ou fontlab -> font Info) */
 	src: url('../fonts/CentaurM7.otf');
-
 }
+
 
 em,i {
 	font font-family: "Centaur";
@@ -73,6 +73,10 @@ h1 {
 	width: 100%;
 	margin: 0;
 	height: auto;
+}
+
+.bigeyes img {
+	width: 40%;
 }
 
 sup {
@@ -138,3 +142,28 @@ max-width: 30%;
 .habillage p, .habillage-droite p {
 	margin: 0;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+
+	body {
+		font-size: 16px;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 15px;
+	}
+
+	.habillage img, .habillage-droite p {
+		float: none;
+		margin-left: -5;
+	}
+
+	.habillage-droite img, .habillage-droite p {
+		float: none;
+	}
+}
+
