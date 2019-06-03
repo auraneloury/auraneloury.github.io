@@ -1,3 +1,5 @@
+@import url("normalize.css");
+
 @font-face {
 	font-family: "Centaur";
 	font-weight: 700; /* graisse definie dans fichier de la fonte (verifier dans glyph ou fontlab -> font Info) */
@@ -37,6 +39,8 @@ body {
 
 p {
 	margin: 20px 20% 20px 20%;
+	background-color: #000;
+	mix-blend-mode: exclusion;
 }
 
 /* paragraphes */
@@ -52,12 +56,14 @@ p {
 }
 
 h1 {
-	font-size: 150px;
+	font-size: 18vmin;
 	font-family: "Helve";
-	color: #00ff00;
-	line-height: 130px;
+	color: #ff0000;
+	line-height: 18vmin;
 	text-align: left;
-	margin-left: 32%;
+	margin-left: 20%;
+	margin-top: 0;
+
 }
 
 .eyes {
@@ -76,7 +82,16 @@ h1 {
 }
 
 .bigeyes img {
-	width: 40%;
+	width: 100vmin;
+	height: auto;
+}
+
+.bigeyes {
+	text-align: center;
+}
+
+body.intro {
+	margin: 0;
 }
 
 sup {
@@ -87,6 +102,12 @@ sup {
 
 header {
 	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100%
+	z-index: 999;
+	mix-blend-mode: color;
+	/*background-color: #ffff00*/
 }
 
 /*
@@ -99,6 +120,7 @@ max-width: 30%;
 }	
 
 .habillage {
+	display: block;
 	float: left;
 	width: 40%;
     margin-left: -15%;
@@ -120,6 +142,7 @@ max-width: 30%;
 }
 
 .habillage-droite {
+	display: block;
     right: 0;
     float: right;
     width: 40%;
@@ -154,16 +177,31 @@ max-width: 30%;
 
 @media screen and (max-width: 767px) {
 	body {
-		font-size: 15px;
+		font-size: 18px;
 	}
 
-	.habillage img, .habillage-droite p {
-		float: none;
-		margin-left: -5;
+	p {
+		margin: 20px 10% 20px 10%;
 	}
 
-	.habillage-droite img, .habillage-droite p {
+	h1 {
+		font-size: 15vmin;
+		line-height: 15vmin;
+		margin-left: 10%;
+	}
+
+	.habillage {
+		width: 100%;
 		float: none;
+		margin: 20px auto 20px auto;
+		padding: 0;
+	}
+
+	.habillage-droite {
+		width: 100%;
+		float: none;
+		margin: 20px auto 20px auto;
+		padding: 0;
 	}
 }
 
