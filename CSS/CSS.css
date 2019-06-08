@@ -3,19 +3,19 @@
 @font-face {
 	font-family: "Centaur";
 	font-weight: 700; /* graisse definie dans fichier de la fonte (verifier dans glyph ou fontlab -> font Info) */
-	src: url('../fonts/CentaurM7.otf');
+	src: url('../fonts/CentaurM9.otf');
 
 }
 
 @font-face {
-	font-family: "Centaur";
+	font-family: "CentaurIt";
 	font-weight: 700; /* graisse definie dans fichier de la fonte (verifier dans glyph ou fontlab -> font Info) */
-	src: url('../fonts/CentaurM7.otf');
+	src: url('../fonts/CentaurIt.otf');
 }
 
 
 em,i {
-	font font-family: "Centaur";
+	font font-family: "CentaurIt";
 }
 
 @font-face {
@@ -58,7 +58,7 @@ p {
 h1 {
 	font-size: 18vmin;
 	font-family: "Helve";
-	color: #ff0000;
+	color: #8A2BE2;
 	line-height: 18vmin;
 	text-align: left;
 	margin-left: 20%;
@@ -178,6 +178,7 @@ max-width: 30%;
 @media screen and (max-width: 767px) {
 	body {
 		font-size: 18px;
+		text-align: left;
 	}
 
 	p {
